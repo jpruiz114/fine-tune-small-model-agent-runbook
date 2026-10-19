@@ -1,0 +1,7 @@
+# torch is intentionally absent: use Colab's preinstalled build, or install it yourself locally.
+trl==1.14.2
+transformers>=4.56.2
+peft
+datasets
+accelerate
+# bitsandbytes   # only for --qlora, CUDA only

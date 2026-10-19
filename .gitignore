@@ -1,0 +1,21 @@
+# Private examples and processed data
+data/
+
+# Generated artifacts and local environments
+artifacts/
+results/
+.venv/
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+.env
+.env.*
+!.env.example
+*.safetensors
+*.pt
+
+# Archived source material must remain outside this repository
+how-to-fine-tune-a-small-ai-model.md
+how-to-fine-tune-a-small-ai-model.pdf
+images/
