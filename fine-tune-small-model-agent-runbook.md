@@ -4,7 +4,7 @@ An independently written, executable adaptation of a fine-tuning guide credited 
 
 **How to use it:** open an agent in an empty folder and say: *"Follow `<path to this file>` to fine-tune a model for this task: …. Stop at every GATE for my approval."*
 
-**Tested status (2026-10-08).** Every script below was run end to end with a tiny test model (`trl-internal-testing/tiny-Qwen2ForCausalLM-2.5`) on CPU (macOS, Python 3.14, torch 2.14.1, transformers 5.19.0, trl 1.14.2, peft 0.21.2): data preparation and its failure cases, training, resuming, loss masking (only the assistant answer is trained on), evaluation and rating scoring. **Not tested:** a real 1.5B run on a Colab T4 GPU, the `--qlora` path (needs a CUDA GPU), and vLLM serving.
+**Evidence status (2026-10-08).** Saved local records show a CPU smoke run with `trl-internal-testing/tiny-Qwen2ForCausalLM-2.5` (Python 3.14.8, torch 2.14.1, transformers 5.19.0, trl 1.14.2, peft 0.21.2): training reached two optimizer steps and evaluation covered two examples per condition. The five scripts passed syntax checks, and data preparation later passed a separate synthetic three-source check. The earlier local runbook reported checks of failure cases, resuming, loss masking, and rating scoring; the preserved records do not independently establish each of those checks. **Not tested in the reviewed evidence:** a real 1.5B run on a Colab T4 GPU, the `--qlora` path (requires a CUDA GPU), vLLM serving, or a meaningful task-quality comparison.
 
 ---
 
